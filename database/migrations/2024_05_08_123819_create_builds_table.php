@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('name'); // Имя сборки
             $table->text('description')->nullable(); // Описание сборки
-            $table->string('image_path')->nullable(); // Путь к изображению сборки
-            $table->string('zip_path'); // Путь к ZIP архиву с 3D моделью для скачивания
+            $table->text('image_path')->nullable(); // Путь к изображению сборки
+            $table->text('zip_path')->nullable(); // Путь к ZIP архиву с 3D моделью для скачивания
 
             //публикация
             $table->boolean('is_published')->default(false);

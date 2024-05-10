@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('manufacturer')->nullable(); // Производитель
             $table->text('description')->nullable(); // Описание
             $table->text('image_path')->nullable(); // Путь к изображению компонента
+            $table->text('zip_path')->nullable(); // Путь к ZIP архиву с 3D моделью для скачивания
             // $table->decimal('price', 8, 2)->nullable(); // Цена, если нужно
 
             //публикация

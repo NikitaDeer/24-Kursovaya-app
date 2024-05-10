@@ -8,7 +8,8 @@
 
           {{-- кнопка позвоните мне --}}
           <a href="#"
-            class="mr-2 mb-2 rounded-lg bg-blue-500 px-5 py-2.5 text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-700">Консультация</a>
+            class="mr-2 mb-2 rounded-lg bg-blue-500 px-5 py-2.5 text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-700">Консультация
+          </a>
         </div>
       </div>
     </section>

@@ -7,7 +7,10 @@
   <x-site.info :$page />
 
   {{-- about section --}}
-  <x-site.about :$advantages :$page />
+  {{-- <x-site.about :$advantages :$page /> --}}
+
+    {{-- about section --}}
+    <x-site.about :$advantages :$page :$builds />
 
   {{-- main section --}}
   <x-site.main :$page />

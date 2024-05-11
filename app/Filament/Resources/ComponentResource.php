@@ -51,10 +51,10 @@ class ComponentResource extends Resource
                   ->label(__('Фотография:')),
 
                 FileUpload::make('zip_path') //загрузка zip-архивов
-                  ->label('Upload Zip File')
+                  ->label('Архив:')
                   ->acceptedFileTypes(['application/zip', 'application/x-zip-compressed'])
                   // ->maxFileSize(1024)
-                  ->directory('uploaded-zips') // Папка, где будут храниться загруженные файлы
+                  ->directory('images') // Папка, где будут храниться загруженные файлы
                   ->visibility('public'), // Если необходимо, чтобы файл был доступен для скачивания
 
                 Toggle::make('is_published')->label(__('Опубликовать')),

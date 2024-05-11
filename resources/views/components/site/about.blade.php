@@ -1,6 +1,6 @@
 {{-- @props(['advantages']) --}}
 
-<section class="bg-gray-50">
+<section id="builds-section" class="bg-gray-50">
   <div class="mx-auto max-w-screen-xl py-8 px-10 sm:py-16 lg:px-6">
     @if ($page)
       <div class="mb-8 max-w-screen-md lg:mb-16">
@@ -21,9 +21,9 @@
           </div>
           <div class="px-6 pb-6">
             <a href="{{ asset('storage/' . $build->zip_path) }}" download
-              class="block w-full rounded bg-blue-500 px-6 py-3 text-sm font-medium leading-none text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300" id="download-button-{{ $build->id }}">
+              class="block w-full rounded bg-blue-500 px-6 py-3 text-center text-sm font-medium leading-none text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300" id="download-button-{{ $build->id }}">
               Скачать
-            </a>
+           </a>
           </div>
         </div>
       @empty

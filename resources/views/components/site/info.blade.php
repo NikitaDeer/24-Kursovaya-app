@@ -46,27 +46,32 @@
       @endif
       {{-- кнопка позвоните мне. письмо на электронку врача --}}
       @guest
-        <a href="#"
+        <a href="{{ route('login') }}"
           class="mr-3 inline-flex items-center justify-center rounded-lg bg-blue-500 py-3 px-5 text-center text-base font-medium text-white hover:bg-blue-700 focus:ring-4 focus:ring-blue-700">
           Позвоните мне!
         </a>
       @endguest
 
       @auth
-        <a href="{{ route('orders.create') }}"
-          class="mr-3 inline-flex items-center justify-center rounded-lg bg-blue-500 py-3 px-5 text-center text-base font-medium text-white hover:bg-blue-700 focus:ring-4 focus:ring-blue-700">
-          Оставить заявку
-        </a>
+      <a href="#builds-section"
+        class="mr-3 w-48 inline-flex items-center justify-center rounded-lg bg-blue-500 py-3 px-5 text-center text-base font-medium text-white hover:bg-blue-700 focus:ring-4 focus:ring-blue-700">
+      Готовые сборки
+      </a>
+
+      <a href="#components-section"
+        class="mr-3 w-48 inline-flex items-center justify-center rounded-lg bg-blue-500 py-3 px-5 text-center text-base font-medium text-white hover:bg-blue-700 focus:ring-4 focus:ring-blue-700">
+      Компоненты
+      </a>
       @endauth
 
       @can('view', auth()->user())
-        <a href="/admin">Перейти в админ панель</a>
+        <a href="/admin">Админка</a>
       @endcan
 
     </div>
     <div class="hidden lg:col-span-5 lg:mt-0 lg:flex">
       @if ($page)
-        <img class="rounded-full" src="storage/{{ $page->main_photo_path }}" alt="Тут Доктор">
+        <img class="rounded-full" src="storage/{{ $page->main_photo_path }}" alt="Тут лого">
       @else
         <x-site.no-content />
       @endif

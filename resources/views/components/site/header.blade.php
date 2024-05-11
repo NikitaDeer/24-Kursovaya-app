@@ -40,26 +40,6 @@
               class="bg-primary-700 lg:text-primary-700 block rounded py-2 pr-4 pl-3 text-gray-700 lg:bg-transparent lg:p-0"
               aria-current="page">Home</a>
           </li>
-          {{-- <li>
-            <a href="#"
-              class="lg:hover:text-primary-700 block border-b border-gray-100 py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 lg:border-0 lg:p-0 lg:hover:bg-transparent">Company</a>
-          </li>
-          <li>
-            <a href="#"
-              class="lg:hover:text-primary-700 block border-b border-gray-100 py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 lg:border-0 lg:p-0 lg:hover:bg-transparent">Marketplace</a>
-          </li>
-          <li>
-            <a href="#"
-              class="lg:hover:text-primary-700 block border-b border-gray-100 py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 lg:border-0 lg:p-0 lg:hover:bg-transparent">Features</a>
-          </li>
-          <li>
-            <a href="#"
-              class="lg:hover:text-primary-700 block border-b border-gray-100 py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 lg:border-0 lg:p-0 lg:hover:bg-transparent">Team</a>
-          </li>
-          <li>
-            <a href="#"
-              class="lg:hover:text-primary-700 block border-b border-gray-100 py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 lg:border-0 lg:p-0 lg:hover:bg-transparent">Contact</a>
-          </li> --}}
         </ul>
       </div>
     </div>

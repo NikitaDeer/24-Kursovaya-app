@@ -6,16 +6,14 @@
   {{-- start info section --}}
   <x-site.info :$page />
 
-  {{-- about section --}}
-  {{-- <x-site.about :$advantages :$page /> --}}
 
-    {{-- about section --}}
-    <x-site.about :$advantages :$page :$builds />
+  {{-- about section --}}
+  <x-site.about :$advantages :$page :$builds />
 
   {{-- main section --}}
-  <x-site.main :$page />
+  <x-site.main :$page :$components />
 
-  <x-site.service :$services />
+  {{-- <x-site.service :$services :$components /> --}}
 
   {{-- bye bye section --}}
   <x-site.bye-bye />

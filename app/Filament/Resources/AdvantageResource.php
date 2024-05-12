@@ -19,73 +19,73 @@ use App\Filament\Resources\AdvantageResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Filament\Resources\AdvantageResource\RelationManagers;
 
-class AdvantageResource extends Resource
-{
-  protected static ?string $model = Advantage::class;
+// class AdvantageResource extends Resource
+// {
+//   protected static ?string $model = Advantage::class;
 
-  protected static ?string $navigationIcon = 'heroicon-o-document-duplicate';
-  protected static ?string $navigationGroup = 'Управление web-страницей';
+//   protected static ?string $navigationIcon = 'heroicon-o-document-duplicate';
+//   protected static ?string $navigationGroup = 'Управление web-страницей';
 
-  protected static ?string $navigationLabel = 'Публикуемые услуги';
+//   protected static ?string $navigationLabel = 'Публикуемые услуги';
 
-  public static function form(Form $form): Form
-  {
-    return $form
-      ->schema([
-        Section::make('Предоставляемая услуга')
-          ->schema([
-            TextInput::make('title')->label(__('Заголовок:')),
-            Textarea::make('description')->label(__('Текст:')),
-            Toggle::make('is_published')->label(__('Опубликовать')),
-          ]),
-      ]);
-  }
+//   public static function form(Form $form): Form
+//   {
+//     return $form
+//       ->schema([
+//         Section::make('Предоставляемая услуга')
+//           ->schema([
+//             TextInput::make('title')->label(__('Заголовок:')),
+//             Textarea::make('description')->label(__('Текст:')),
+//             Toggle::make('is_published')->label(__('Опубликовать')),
+//           ]),
+//       ]);
+//   }
 
-  public static function table(Table $table): Table
-  {
-    return $table
-      ->columns([
-        TextColumn::make('title')
-          ->searchable()
-          ->sortable()
-          ->label('Заголовок'),
-        TextColumn::make('description')
-          ->searchable()
-          ->sortable()
-          ->limit(25)
-          ->label('Содержимое'),
-        TextColumn::make('created_at')
-          ->dateTime('d-m-Y H:i')
-          ->label('Дата создания'),
-        ToggleColumn::make('is_published')
-          ->sortable()
-          ->label('Опубликованно'),
+//   public static function table(Table $table): Table
+//   {
+//     return $table
+//       ->columns([
+//         TextColumn::make('title')
+//           ->searchable()
+//           ->sortable()
+//           ->label('Заголовок'),
+//         TextColumn::make('description')
+//           ->searchable()
+//           ->sortable()
+//           ->limit(25)
+//           ->label('Содержимое'),
+//         TextColumn::make('created_at')
+//           ->dateTime('d-m-Y H:i')
+//           ->label('Дата создания'),
+//         ToggleColumn::make('is_published')
+//           ->sortable()
+//           ->label('Опубликованно'),
 
-      ])
-      ->filters([
-        //
-      ])
-      ->actions([
-        Tables\Actions\EditAction::make(),
-      ])
-      ->bulkActions([
-        Tables\Actions\DeleteBulkAction::make(),
-      ]);
-  }
+//       ])
+//       ->filters([
+//         //
+//       ])
+//       ->actions([
+//         Tables\Actions\EditAction::make(),
+//       ])
+//       ->bulkActions([
+//         Tables\Actions\DeleteBulkAction::make(),
+//       ]);
+//   }
 
-  public static function getRelations(): array
-  {
-    return [
-      //
-    ];
-  }
+//   public static function getRelations(): array
+//   {
+//     return [
+//       //
+//     ];
+//   }
 
-  public static function getPages(): array
-  {
-    return [
-      'index' => Pages\ListAdvantages::route('/'),
-      'create' => Pages\CreateAdvantage::route('/create'),
-      'edit' => Pages\EditAdvantage::route('/{record}/edit'),
-    ];
-  }
-}
+//   public static function getPages(): array
+//   {
+//     return [
+//       'index' => Pages\ListAdvantages::route('/'),
+//       'create' => Pages\CreateAdvantage::route('/create'),
+//       'edit' => Pages\EditAdvantage::route('/{record}/edit'),
+//     ];
+//   }
+// }

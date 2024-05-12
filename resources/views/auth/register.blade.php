@@ -4,13 +4,13 @@
 
     <!-- Name -->
     <div>
-      <x-input-label for="name" :value="__('Имя')" />
+      <x-input-label for="name" :value="__('Имя (Логин)')" />
       <x-text-input id="name" class="mt-1 block w-full" type="text" name="name" :value="old('name')" required
         autofocus autocomplete="name" />
       <x-input-error :messages="$errors->get('name')" class="mt-2" />
     </div>
 
-    <div class="mt-4">
+    {{-- <div class="mt-4">
       <x-input-label for="surname" :value="__('Фамилия')" />
       <x-text-input id="surname" class="mt-1 block w-full" type="text" name="surname" :value="old('surname')" required
         autofocus autocomplete="surname" />
@@ -30,7 +30,7 @@
       <x-text-input id="phone" class="mt-1 block w-full" type="text" name="phone" :value="old('phone')" required
         autocomplete="username" />
       <x-input-error :messages="$errors->get('phone')" class="mt-2" />
-    </div>
+    </div> --}}
 
     <!-- Email Address -->
     <div class="mt-4">

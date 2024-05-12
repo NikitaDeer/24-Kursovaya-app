@@ -31,6 +31,8 @@ class PageResource extends Resource
 
   protected static ?string $navigationLabel = 'Публикуемая информация';
 
+  protected static ?int $sort = 1;
+
   public static function form(Form $form): Form
   {
     return $form

@@ -30,6 +30,8 @@ class ComponentResource extends Resource
 
     protected static ?string $navigationLabel = 'Отдельные компоненты';
 
+    protected static ?int $sort = 3;
+
     public static function form(Form $form): Form
     {
         return $form

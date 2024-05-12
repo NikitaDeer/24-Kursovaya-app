@@ -30,6 +30,8 @@ class BuildResource extends Resource
 
     protected static ?string $navigationLabel = 'Готовые сборки';
 
+    protected static ?int $sort = 2;
+
     public static function form(Form $form): Form
     {
         return $form
